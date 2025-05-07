@@ -1,3 +1,14 @@
+/*-----------Notes to understand logic-------------
+ 1. If the original list is empty, return null.
+ 2. Create the head of the new list using the data from the original head.
+ 3. Use two pointers:
+    - tempOriginal: to traverse the original list.
+    - tempCopy: to build the new list.
+ 4. For each node in the original list:
+    - Create a new node with the same data.
+    - Link it to the end of the copied list.
+ 5. Return the head of the newly copied list.*/
+
 class Node {
     int data;
     Node next;
