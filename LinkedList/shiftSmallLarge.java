@@ -1,3 +1,20 @@
+/* -------------- Notes to understand the logic -------------------
+ Step 1: Find the smallest and largest elements in the list and store them in two pointers.
+
+ Step 2: Move the smallest element to the head:
+         - Traverse to the node just before the smallest.
+         - Update its next pointer to skip the smallest.
+         - Set the next of the smallest to the current head.
+         - Update the head to point to the smallest.
+
+ Step 3: Move the largest element to the tail:
+         - Traverse to the node just before the largest.
+         - Update its next pointer to skip the largest.
+         - Traverse to the end of the list.
+         - Set the next of the last node to point to the largest.
+         - Set the next of the largest to null.
+*/
+
 class Node {
     int data;
     Node next;
