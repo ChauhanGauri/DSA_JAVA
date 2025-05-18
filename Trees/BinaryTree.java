@@ -1,4 +1,5 @@
-
+ //Build a Tree from its preorder traversal
+// finding all traversals of a given tree 
 import java.util.*;
 public class binary_tree {
     static class Node {
